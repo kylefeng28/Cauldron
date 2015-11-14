@@ -4,6 +4,8 @@ pacman (Arch)
 homebrew (Mac)
 
 puppet
+Cucumber
+GNU automake testsuites
 
 # Formulas and recipes
 homebrew formulas

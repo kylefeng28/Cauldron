@@ -1,0 +1,12 @@
+[install]
+shell("apt-get install john")
+
+[check]
+not(exists("/etc/cron.d/john"))
+and not(exists("/etc/cron.daily/john"))
+and not(exists("/usr/bin/john"))
+and not(equals `which john` "john not found")
+and not(isRunning("john"))
+
+[remove]
+shell("apt-get purge john")
